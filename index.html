@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>azul y rosa</title> <!-- Título de la página -->
+</head>
+<style>
+    img {
+        width: 50%; /* Reduce el tamaño de todas las imágenes al 50% del contenedor */
+    }
+    strong {
+        color: blueviolet; /* Cambia el color del texto en negrita a azul violeta */
+    }
+    mark {
+        background-color: pink; /* Cambia el fondo de los textos resaltados a rosado */
+    }
+    span {
+        color: blueviolet; /* Cambia el color de los textos dentro de <span> a azul violeta */
+    }
+</style>
+<body>
+    <header>
+        <p>Bienvenido a <span>mi sitio web</span>!</p> <!-- Texto de bienvenida con la palabra "mi sitio web" en color azul violeta -->
+
+        <h1><mark><I>azul y rosa</I></mark></h1> <!-- Título principal con texto en cursiva y resaltado en rosa -->
+        <img src="/imagenes/bootcamp logo.jpg" alt="logo pagina"> <!-- Imagen del logo, puede no mostrarse si la ruta no es correcta -->
+        
+        <nav> <!-- Menú de navegación -->
+            <a href="">¿Quienes somos?</a> <!-- Enlace sin URL (debería tener un destino) -->
+            <a href="">carrito</a> <!-- Enlace para el carrito -->
+            <button>registrarse</button> <!-- Botón para registro -->
+            <button>iniciar sesion</button> <!-- Botón para iniciar sesión -->
+        </nav>
+        <hr> <!-- Línea divisoria -->
+    </header>
+
+    <main>
+        <section>
+            <h2><a href="">categorias</a></h2> <!-- Título con un enlace, pero el enlace no tiene destino -->
+            <div class="container"> <!-- Contenedor para la lista de categorías -->
+                <ul> <!-- Lista desordenada -->
+                    <li><a href="">tops y blusas</a></li>
+                    <li><a href="">pantalones y shorts</a></li>
+                    <li><a href="">enterizos</a></li>
+                    <li><a href="">sets</a></li>
+                    <li><a href="">zapatos</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <article>
+                <p>
+                    <br> <!-- Salto de línea innecesario aquí -->
+                    En<strong><em> Azul y Rosa</em></strong> somos apasionados de la moda y la creatividad. 
+                    Nuestra historia comenzó en 2018 cuando decidimos unir pasión por el diseño y la confección 
+                    para crear una marca que ofreciera ropa única y de alta calidad. Nuestra misión es proporcionar 
+                    a nuestros clientes ropa que los haga sentir seguros, cómodos y expresivos. Creemos que la moda 
+                    debe ser accesible y sostenible, por lo que nos esforzamos por utilizar materiales amigables y 
+                    producir de manera responsable.
+                </p>
+            </article>
+        </section>
+
+        <section> <!-- Sección con formulario para seleccionar productos -->
+            <form action="" method="post"> <!-- Formulario con método POST (debería tener una URL de destino) -->
+                <label for="categorias">categorias:</label> <!-- Etiqueta para seleccionar una categoría -->
+                <select id="producto" name="producto"> <!-- Menú desplegable de categorías -->
+                    <option value="">tops y blusas</option>
+                    <option value="">pantalones y shorts</option>
+                    <option value="">enterizos</option>
+                    <option value="">sets</option>
+                    <option value="">zapatos</option>
+                </select>
+            
+                <label for="talla">Selecciona tu talla:</label> <!-- Etiqueta para seleccionar talla -->
+                <select id="talla" name="talla"> <!-- Menú desplegable de tallas -->
+                    <option value="S">S - Pequeña</option>
+                    <option value="M">M - Mediana</option>
+                    <option value="L">L - Grande</option>
+                    <option value="XL">XL - Extra Grande</option>
+                </select>
+            
+                <label for="cantidad">Cantidad:</label> <!-- Etiqueta para ingresar cantidad -->
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1"> <!-- Selector de cantidad con valores entre 1 y 10 -->
+            
+                <button type="submit">Añadir al carrito</button> <!-- Botón para añadir productos al carrito -->
+            </form>
+        </section>
+
+        <input type="text" placeholder="deja tus comentarios"> 
+        <button type="submit">enviar</button> 
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <aside> <!-- Sección con información de contacto -->
+            <h4>contactanos</h4>
+            <h5>telefono: </h5> <!-- Falta el número de teléfono -->
+            <h5>correo: </h5> 
+            <h5>direccion: </h5> 
+            <h6><a href="">Instagram</a></h6> 
+            <h6><a href="">Faceboock</a></h6>
+            <h6><a href="">WhatsApp</a></h6> 
+        </aside>
+    </footer>
+</body>
+</html>
