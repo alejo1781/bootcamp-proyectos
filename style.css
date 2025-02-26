@@ -1,9 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fce4ec;
+    background-color: #f9f2f4;
     color: #333;
 }
 
@@ -11,8 +17,8 @@ body {
 header {
     background-color: #2196F3;
     color: white;
-    text-align: center;
     padding: 20px 0;
+    height: 60px;
 }
 
 header p span {
@@ -28,15 +34,24 @@ header h1 mark {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     gap: 15px;
-    margin-top: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.left {
+    display: flex;
+    gap: 15px;
+}
+
+.right{
+    display: flex;
+    gap: 15px;
 }
 
 nav button {
@@ -48,6 +63,13 @@ nav button {
     border-radius: 5px;
 }
 
+nav button:hover {
+    background-color: #0056b3;
+}
+
+.logo{
+    height: 200px;
+}
 /* Sección principal */
 main {
     padding: 20px;
